@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Guid</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/Wineass-Ios7-Redesign-Weather.512.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  <body>
+    <!-- <nav>
+      <div class="logo">BWeather</div>
+      <div class="nav-list">
+        <ul class="list">
+          <li class="list-items">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </li>
+          <li class="list-items">
+            <i class="fa-solid fa-users"></i>
+            About
+          </li>
+          <li class="list-items">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            History
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <!-- Replace with your cloud image URL -->
+          <img src="./assets/Wineass-Ios7-Redesign-Weather.512.png" alt="Cloud Icon" class="cloud-icon" />
+          <span class="title">
+            Weather<span class="highlight">Pulse<span class="syb">+</span></span>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <section class="top">
+      <section class="middle">
+        <main class="main-container">
+          <header class="input-container">
+            <input class="city-input" placeholder="Search City" type="text" />
+            <button id="search-btn" class="search-btn">
+              <span class="material-symbols-outlined"> search </span>
+            </button>
+          </header>
+          <section class="weather-info">
+            <div class="location-date-container">
+              <div class="location">
+                <span class="material-symbols-outlined"> location_on </span>
+              </div>
+              <h4 class="country_txt">Hyderabad</h4>
+            </div>
+            <h5 class="current_date_txt">Wed,08 Sep</h5>
+          </section>
+          <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="/assets/404.png" alt="404 Error" />
+          </div>
+
+          <div class="weather-body">
+            <img
+              src="/assets/cloud.png"
+              alt="Weather Image"
+              class="weather-img"
+            />
+
+            <div class="weather-box">
+              <p class="temperature">0 <sup>°C</sup></p>
+              <p class="description">light rain</p>
+            </div>
+
+            <div class="weather-details">
+              <div class="humidity">
+                <i class="fa-sharp fa-solid fa-droplet"></i>
+                <div class="text">
+                  <span id="humidity">45%</span>
+                  <p>Humidity</p>
+                </div>
+              </div>
+
+              <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                  <span id="wind-speed">12Km/H</span>
+                  <p>Wind Speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <main class="sec-container">
+          <section class="top-layer">
+            <p class="side-header">Today's Highlights</p>
+            <div class="weather-item">
+              <div class="box-text">
+                <span class="material-symbols-outlined">
+                  humidity_percentage
+                </span>
+                <p>Humidity</p>
+                <span id="humidity2">45%</span>
+              </div>
+            </div>
+            <div class="weather-item">
+              <div class="box-text">
+                <i class="fa-solid fa-wind"></i>
+                <p>wind-speed</p>
+                <span id="wind2">45%</span>
+              </div>
+            </div>
+            <div class="weather-item">
+              <div class="box-text">
+                <span class="material-symbols-outlined"> cyclone </span>
+                <p>Wind Degree</p>
+                <span id="deg">45%</span>
+              </div>
+            </div>
+            <div class="weather-item">
+              <div class="box-text">
+                <span class="material-symbols-outlined"> thermostat </span>
+                <p>Temperature</p>
+                <span id="Temp">45%</span>
+              </div>
+            </div>
+            <div class="weather-item">
+              <div class="box-text">
+                <i class="fa-solid fa-temperature-low"></i>
+                <p>Min-Temperature</p>
+                <span id="min-temp">45%</span>
+              </div>
+            </div>
+            <div class="weather-item">
+              <div class="box-text">
+                <i class="fa-solid fa-temperature-high"></i>
+                <p>Max-Temperature</p>
+                <span id="max-temp">45%</span>
+              </div>
+            </div>
+            <div class="weather-item">
+              <div class="box-text">
+                <span class="material-symbols-outlined"> waves </span>
+                <p>Pressure</p>
+                <span id="pressure">45%</span>
+              </div>
+            </div>
+            <div class="weather-item">
+              <div class="box-text">
+                <span class="material-symbols-outlined"> water </span>
+                <p>Sea Level</p>
+                <span id="sea">45%</span>
+              </div>
+            </div>
+            <div class="weather-item">
+              <div class="box-text">
+                <span class="material-symbols-outlined"> heat </span>
+                <p>Feel's Like</p>
+                <span id="feel">45%</span>
+              </div>
+            </div>
+          </section>
+        </main>
+        <section class="ain">
+          <iframe width="500px" height="580px" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=17.372&lon=78.438" frameborder="0"></iframe>
+        </section>
+      </section>
+    </section>
+    <section class="forcast_now">
+      <section class="forecast-container">
+        <!-- Cards will be generated here dynamically -->
+      </section>
+    </section>
+    <script src="/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/60fdd5deea.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script>
+      const url1 = "https://tile.openweathermap.org/map/temp_new/5/23/13.png?appid=98a8fac040caeeb1735ce72d3b710682";
+
+      // Fetch the image as a Blob
+      fetch(url1)
+          .then(response => response.blob())
+          .then(blob => {
+              // Create an object URL for the image
+              const imageUrl = URL.createObjectURL(blob);
+
+              // Create an img element and set the src attribute
+              const imgElement = document.createElement('img');
+              imgElement.src = imageUrl;
+
+              // Append the img element to the container
+              document.getElementById('image-container').appendChild(imgElement);
+          })
+          .catch(error => console.error('Error fetching image:', error));
+  </script> -->
+  
+  </body>
+</html>
